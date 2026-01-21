@@ -19,28 +19,42 @@
         }
         
         .smooth-scroll { scroll-behavior: smooth; }
+
+        @media (max-width: 768px) {
+            .hero-section a:nth-child(2) {
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+                font-size: 14px !important;
+            }
+        }
     </style>
 </head>
 <body class="smooth-scroll bg-white">
 
+    <!-- NAVBAR -->
     <nav class="bg-white fixed w-full z-50 shadow-md border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="logo-orasi.png" alt="ORASI Consulting Group" class="h-24 md:h-32 object-contain">
+             <img src="logo-orasi.png" alt="ORASI Consulting Group" class="h-24 md:h-32 object-contain">
+
+
             </div>
 
             <div class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-bold text-slate-600">
                 <a href="#soluciones" class="hover:text-amber-600 transition duration-300">Soluciones</a>
-                <a href="#orasi-lab" class="hover:text-amber-600 transition duration-300">ORASI Lab</a>
                 <a href="#experiencia" class="hover:text-amber-600 transition duration-300">Experiencia de Campo</a>
                 <a href="#academia" class="hover:text-amber-600 transition duration-300">Academy</a>
-                <a href="https://wa.me/51986375900" target="_blank" class="bg-slate-900 text-white px-5 py-2 hover:bg-amber-600 transition duration-300 rounded-sm">
-                    Agendar Consultoría
+                <a href="#programa-negociacion" class="hover:text-amber-600 transition duration-300">Programa de Negociación</a>
+                <a href="https://wa.me/51986375900?text=Hola%2C%20quiero%20agendar%20una%20consultor%C3%ADa%20desde%20la%20web%20de%20ORASI."
+   target="_blank" rel="noopener noreferrer"
+   class="bg-slate-900 text-white px-5 py-2 hover:bg-amber-600 transition duration-300 rounded-sm">
+    Agendar Consultoría
                 </a>
             </div>
         </div>
     </nav>
 
+    <!-- HERO -->
     <header class="hero-section min-h-screen flex items-center justify-center text-center px-4 relative">
         <div class="max-w-5xl mx-auto pt-40 pb-12">
             <div class="inline-block border-b-2 border-amber-500 pb-2 mb-6">
@@ -51,40 +65,520 @@
                 <span class="italic text-slate-300 font-light">Conflictos Corporativos</span>
             </h1>
             <p class="text-slate-300 text-lg md:text-xl font-light max-w-2xl mx-auto mb-12 leading-relaxed">
-                Intervención de alto nivel para desbloquear negociaciones críticas y gestionar crisis mediante metodologías de ingeniería de acuerdos.
+                Intervención de alto nivel para desbloquear negociaciones críticas, alinear directivas y gestionar crisis mediante metodologías de ingeniería de acuerdos.
             </p>
+            
             <div class="flex flex-col md:flex-row gap-5 justify-center items-center">
-                <a href="#contacto" class="bg-amber-600 text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-amber-700 transition shadow-lg rounded-sm">
+                <a href="#contacto" class="w-full md:w-auto bg-amber-600 text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-amber-700 transition shadow-lg text-center rounded-sm">
                     Solicitar Intervención
+                </a>
+                
+                <a href="https://share.hsforms.com/2t4J7bR_aQyOABYL1jrmgzQu6jre" target="_blank" class="bg-amber-600 text-white px-6 py-3 text-[11px] md:text-xs font-bold uppercase tracking-wider hover:bg-amber-700 transition text-center flex items-center justify-center rounded-sm leading-tight max-w-xs">
+                    Diagnóstico de Capacidad Organizacional<br>de Negociación e Involucramiento
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="orasi-lab" class="py-24 bg-slate-900 text-white px-6">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-            <div class="lg:w-1/2">
-                <span class="text-amber-500 font-bold text-xs tracking-[0.2em] uppercase mb-2 block">Innovación Digital</span>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 font-serif">ORASI Lab</h2>
-                <p class="text-slate-400 text-lg mb-8 font-light leading-relaxed">
-                    Ideamos y desarrollamos aplicaciones de ingeniería digital a la medida. Transformamos desafíos operativos en herramientas de software que optimizan la toma de decisiones y la reportabilidad en tiempo real.
+    <!-- COSTO OCULTO -->
+    <section class="py-24 bg-slate-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">El Costo Oculto de la Fricción</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+                <p class="mt-6 text-slate-600 max-w-2xl mx-auto">
+                    Cuando la comunicación se rompe, la rentabilidad se detiene. Intervenimos quirúrgicamente donde el conflicto bloquea el valor.
                 </p>
-                <div class="grid gap-4">
-                    <div class="bg-slate-800 p-4 border-l-4 border-amber-600">
-                        <h4 class="font-bold">Software a la Medida</h4>
-                        <p class="text-sm text-slate-400">Soluciones únicas para retos organizacionales específicos.</p>
-                    </div>
-                    <div class="bg-slate-800 p-4 border-l-4 border-slate-500">
-                        <h4 class="font-bold">Gestión de Datos</h4>
-                        <p class="text-sm text-slate-400">Control de campo y reportabilidad automatizada.</p>
-                    </div>
-                </div>
             </div>
-            <div class="lg:w-1/2">
-                <img src="https://images.unsplash.com/photo-1551288049-bbdac8626ad1?auto=format&fit=crop&w=800&q=80" alt="ORASI Lab" class="rounded shadow-2xl border border-slate-700">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 border-t-4 border-slate-900 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="text-slate-300 text-4xl mb-4 group-hover:text-amber-600 transition">01</div>
+                    <h3 class="text-lg font-bold mb-3 font-serif">Silos en Guerra</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Conflictos crónicos entre Comercial y Operaciones que erosionan el margen.</p>
+                </div>
+                <div class="bg-white p-8 border-t-4 border-amber-600 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="text-amber-200 text-4xl mb-4 group-hover:text-amber-600 transition">02</div>
+                    <h3 class="text-lg font-bold mb-3 font-serif">Deadlock Comercial</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Acuerdos trabados con clientes clave o proveedores críticos.</p>
+                </div>
+                <div class="bg-white p-8 border-t-4 border-slate-900 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="text-slate-300 text-4xl mb-4 group-hover:text-amber-600 transition">03</div>
+                    <h3 class="text-lg font-bold mb-3 font-serif">Crisis de Gobernanza</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Disputas entre socios o falta de alineamiento en la C-Suite.</p>
+                </div>
+                <div class="bg-white p-8 border-t-4 border-amber-600 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="text-amber-200 text-4xl mb-4 group-hover:text-amber-600 transition">04</div>
+                    <h3 class="text-lg font-bold mb-3 font-serif">Tensión Social</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Conflictos socio-ambientales y negociaciones comunitarias complejas.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    </body>
+    <!-- CORE SERVICE -->
+    <section id="soluciones" class="py-24 px-6 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 order-2 lg:order-1">
+                <span class="text-amber-600 font-bold text-xs tracking-[0.2em] uppercase mb-2 block">Core Service</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">Ingeniería de Acuerdos y Mediación Estratégica</h2>
+                <p class="text-slate-600 text-lg mb-6 font-light">
+                    No solo "resolvemos problemas"; reestructuramos la dinámica de poder para asegurar la viabilidad futura del negocio. Actuamos como Consultores y como un <strong class="text-slate-900">Tercero Neutral Estratégico</strong>.
+                </p>
+                
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start">
+                        <span class="text-amber-600 mr-3 text-xl">▸</span>
+                        <div>
+                            <strong class="block text-slate-900 font-serif text-lg">Metodología MGA & Harvard</strong>
+                            <p class="text-sm text-slate-500">Mutual Gains Approach para maximizar valor sin ceder posiciones.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="text-amber-600 mr-3 text-xl">▸</span>
+                        <div>
+                            <strong class="block text-slate-900 font-serif text-lg">Servicios de Mediación, Facilitación y Procesos de Consensos</strong>
+                            <p class="text-sm text-slate-500">Mediación ejecutiva, mediación organizacional y procesos con múltiples stakeholders para destrabar situaciones altamente sensibles.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="text-amber-600 mr-3 text-xl">▸</span>
+                        <div>
+                            <strong class="block text-slate-900 font-serif text-lg">Diagnóstico de Capacidades Organizacionales y Co-diseño Estructural</strong>
+                            <p class="text-sm text-slate-500">Evaluamos la capacidad de negociación e involucramiento y co-diseñamos estructuras de gestión social alineadas a la estrategia del negocio.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="text-amber-600 mr-3 text-xl">▸</span>
+                        <div>
+                            <strong class="block text-slate-900 font-serif text-lg">Confidencialidad Total</strong>
+                            <p class="text-sm text-slate-500">Protocolos estrictos para situaciones de alto riesgo reputacional y político.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 w-full order-1 lg:order-2">
+                <div class="relative rounded shadow-2xl overflow-hidden border border-slate-200">
+                    <img src="más alto.jpg" alt="Mesa Estratégica Orasi" class="w-full object-cover h-[400px]">
+                    <div class="absolute bottom-0 left-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent w-full p-6 pt-20 text-white">
+                        <h3 class="text-xl font-serif mb-1">Mesa Estratégica</h3>
+                        <p class="text-sm text-slate-300">Análisis de conflictos sociales y corporativos de alto nivel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+            <div class="lg:w-1/2">
+                <div class="relative rounded-sm shadow-2xl overflow-hidden border-4 border-slate-700 transform rotate-1 hover:rotate-0 transition duration-500">
+                    <img src="conga.jpg" alt="Intervención en Campo" class="w-full object-cover h-[450px]">
+                    <div class="absolute top-4 right-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 uppercase tracking-widest shadow-lg">
+                        Casos Reales
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif">Donde otros teorizan, nosotros intervenimos.</h2>
+                <p class="text-slate-400 font-light text-lg mb-8">
+                    La verdadera mediación no ocurre solo en salas de juntas con aire acondicionado. ORASI Consulting Group cuenta con experiencia probada en negociaciones complejas en territorio, gestionando asambleas comunitarias, conflictos sindicales y mesas de diálogo de alta tensión.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="border-l-2 border-amber-600 pl-4">
+                        <h4 class="font-bold text-white text-lg">Legitimidad</h4>
+                        <p class="text-sm text-slate-500 mt-1">Construcción de confianza con múltiples actores.</p>
+                    </div>
+                    <div class="border-l-2 border-amber-600 pl-4">
+                        <h4 class="font-bold text-white text-lg">Paz Social</h4>
+                        <p class="text-sm text-slate-500 mt-1">Acuerdos sostenibles que permiten la operatividad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOSTENIBILIDAD COMERCIAL -->
+    <section class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-2">Sostenibilidad Comercial Post-Conflicto</h2>
+                <p class="text-slate-500">Una vez resuelta la crisis, optimizamos la maquinaria comercial para el crecimiento rentable.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Estrategia -->
+                <div
+                    class="bg-slate-50 p-8 hover:bg-white hover:shadow-xl transition border border-transparent hover:border-amber-200 cursor-pointer"
+                    data-detalle="estrategia-detalle"
+                >
+                    <h3 class="text-xl font-serif text-slate-900 mb-6 flex items-center">
+                        <span class="w-2 h-2 bg-amber-500 rounded-full mr-3"></span> Estrategia
+                    </h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="border-b border-slate-200 pb-2">Diseño de Estrategia Comercial</li>
+                        <li class="border-b border-slate-200 pb-2">Modelos de Expansión</li>
+                        <li class="pb-2">Planes a 1, 3 y 5 años</li>
+                    </ul>
+                </div>
+
+                <!-- Operaciones -->
+                <div
+                    class="bg-slate-50 p-8 hover:bg-white hover:shadow-xl transition border border-transparent hover:border-amber-200 cursor-pointer"
+                    data-detalle="operaciones-detalle"
+                >
+                    <h3 class="text-xl font-serif text-slate-900 mb-6 flex items-center">
+                        <span class="w-2 h-2 bg-amber-500 rounded-full mr-3"></span> Operaciones
+                    </h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="border-b border-slate-200 pb-2">Optimización de Procesos</li>
+                        <li class="border-b border-slate-200 pb-2">Gestión de Fidelización</li>
+                        <li class="pb-2">Auditoría de Ejecución</li>
+                    </ul>
+                </div>
+
+                <!-- Inteligencia -->
+                <div
+                    class="bg-slate-50 p-8 hover:bg-white hover:shadow-xl transition border border-transparent hover:border-amber-200 cursor-pointer"
+                    data-detalle="inteligencia-detalle"
+                >
+                    <h3 class="text-xl font-serif text-slate-900 mb-6 flex items-center">
+                        <span class="w-2 h-2 bg-amber-500 rounded-full mr-3"></span> Inteligencia
+                    </h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="border-b border-slate-200 pb-2">Inteligencia de Mercado</li>
+                        <li class="border-b border-slate-200 pb-2">Marketing Comercial B2B</li>
+                        <li class="pb-2">Análisis de Datos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETALLE SERVICIOS (se muestra solo uno según clic) -->
+    <section id="detalle-servicios" class="py-20 bg-slate-50 px-6 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto space-y-16">
+
+            <!-- Estrategia Comercial -->
+            <article id="estrategia-detalle" class="detalle-servicio hidden">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4 font-serif">Estrategia Comercial</h3>
+                <p class="text-slate-600 mb-4">
+                    Definimos con precisión en qué mercados jugar, cómo ganar y con qué propuesta de valor,
+                    para que cada esfuerzo comercial responda a una dirección clara y financieramente sostenible.
+                </p>
+
+                <div class="space-y-3 text-sm text-slate-700">
+                    <p>
+                        <strong>Diseño de Estrategia Comercial.</strong>
+                        Clarificamos segmentos objetivo, propuesta de valor, posicionamiento y criterios de priorización
+                        para que el equipo comercial sepa exactamente dónde concentrar su energía y presupuesto.
+                    </p>
+                    <p>
+                        <strong>Modelos de Expansión.</strong>
+                        Diseñamos rutas de crecimiento por territorios, canales o líneas de negocio, equilibrando velocidad,
+                        riesgo y capacidad interna para no “morir de éxito”.
+                    </p>
+                    <p>
+                        <strong>Planes a 1, 3 y 5 años.</strong>
+                        Convertimos la visión de crecimiento en metas concretas de ventas, margen y cartera, con hitos,
+                        responsables y métricas de seguimiento que permiten corregir a tiempo.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Operaciones Comerciales -->
+            <article id="operaciones-detalle" class="detalle-servicio hidden">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4 font-serif">Operaciones Comerciales</h3>
+                <p class="text-slate-600 mb-4">
+                    Aterrizamos la estrategia en procesos, rutinas y controles que aseguran que lo que se decidió en el
+                    comité comercial realmente ocurra en el día a día frente al cliente.
+                </p>
+
+                <div class="space-y-3 text-sm text-slate-700">
+                    <p>
+                        <strong>Optimización de Procesos.</strong>
+                        Revisamos el flujo comercial de punta a punta (prospectos, seguimiento, cierre y postventa) para
+                        reducir fricciones, tiempos muertos y fugas de oportunidad.
+                    </p>
+                    <p>
+                        <strong>Gestión de Fidelización.</strong>
+                        Diseñamos programas de retención, cross-selling y recuperación de clientes que aumentan el valor
+                        de vida del cliente y reducen la dependencia de “cazar siempre nuevos”.
+                    </p>
+                    <p>
+                        <strong>Auditoría de Ejecución.</strong>
+                        Medimos la calidad de la ejecución comercial en campo (visitas, propuestas, seguimiento) y
+                        construimos tableros simples para que la dirección tome decisiones con datos, no con percepciones.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Inteligencia Comercial -->
+            <article id="inteligencia-detalle" class="detalle-servicio hidden">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4 font-serif">Inteligencia Comercial</h3>
+                <p class="text-slate-600 mb-4">
+                    Transformamos información dispersa en decisiones comerciales concretas: a quién priorizar, qué
+                    ofrecer, a qué precio y con qué narrativa para ganar negocio rentable.
+                </p>
+
+                <div class="space-y-3 text-sm text-slate-700">
+                    <p>
+                        <strong>Inteligencia de Mercado.</strong>
+                        Analizamos tendencias, competencia y comportamiento de clientes clave para identificar riesgos
+                        y oportunidades antes que el mercado las haga evidentes.
+                    </p>
+                    <p>
+                        <strong>Marketing Comercial B2B.</strong>
+                        Alineamos campañas, contenidos y acciones de marketing con los objetivos de ventas: menos
+                        “ruido de marca” y más oportunidades concretas en el pipeline.
+                    </p>
+                    <p>
+                        <strong>Análisis de Datos.</strong>
+                        Trabajamos con indicadores de ventas, margen, rotación y cartera para construir modelos
+                        sencillos de predicción y escenarios que orientan mejor la inversión comercial.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ACADEMIA -->
+    <section id="academia" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-amber-200 rounded-full opacity-50 z-0"></div>
+                        <img src="conferencia.jpg" alt="Masterclass Orasi" class="relative z-10 rounded shadow-lg w-full object-cover h-[400px]">
+                    </div>
+                </div>
+                <div>
+                    <span class="text-amber-600 font-bold text-xs tracking-[0.2em] uppercase mb-2 block">Capacity Building</span>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">ORASI Consulting Group</h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Capacitación online y presencial enfocada en negociación aplicada, diseño de acuerdos y gestión de conflictos complejos.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Desarrollamos competencias reales mediante simulaciones, casos propios de los participantes y feedback individual,
+                        para que cada hora de entrenamiento tenga impacto directo en la forma de negociar.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 border-l-4 border-slate-900 shadow-sm">
+                            <h4 class="font-bold text-slate-800">Capacitación Online</h4>
+                            <p class="text-sm text-slate-500">Cursos online en vivo y cursos asincrónicos (a tu propio ritmo).</p>
+                        </div>
+                        <div class="bg-white p-4 border-l-4 border-amber-600 shadow-sm">
+                            <h4 class="font-bold text-slate-800">Talleres In-Company</h4>
+                            <p class="text-sm text-slate-500">Diseño de talleres a la medida con metodología activamente participativa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMA NEGOCIACIÓN -->
+    <section id="programa-negociacion" class="py-24 px-6 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-amber-600 font-bold text-xs tracking-[0.2em] uppercase mb-2 block">
+                    Programa Intensivo · Online en Vivo
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                    Programa Intensivo de Negociación – 3 sesiones en vivo
+                </h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    19, 21 y 26 de enero · 3 sesiones de 3 horas · 9 horas de entrenamiento práctico
+                    para dejar de perder acuerdos y mejorar tus cierres con un método claro.
+                </p>
+            </div>
+https://landing-page-orasi-cg.vercel.app/
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h3 class="text-xl font-serif text-slate-900 mb-4">¿Para quién es?</h3>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li>Emprendedores y dueños de negocio que sienten que ceden demasiado en descuentos y condiciones.</li>
+                        <li>Profesionales de ventas y servicios que escuchan mucho “déjame pensarlo” y pocos “sí”.</li>
+                        <li>Líderes comerciales que quieren un método claro para preparar negociaciones y entrenar a su equipo.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-serif text-slate-900 mb-4">Lo que te vas a llevar</h3>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li>Un método paso a paso para preparar negociaciones (enfoque Harvard / MGA adaptado a tu realidad).</li>
+                        <li>Plantillas prácticas para preparar, conducir y analizar tus negociaciones.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-lg p-8 shadow-sm">
+                    <h3 class="text-xl font-serif text-slate-900 mb-4">Estructura de las 3 sesiones</h3>
+
+                    <!-- Sesión 1 -->
+                    <h4 class="font-semibold text-slate-800 text-sm mb-1">Sesión 1 – Fundamentos y diagnóstico</h4>
+                    <ul class="text-sm text-slate-600 mb-4 space-y-1">
+                        <li>Impacto de percepciones en las negociaciones y el involucramiento.</li>
+                        <li>Levantamiento y análisis de paradigmas en interacciones.</li>
+                        <li>Sistemas de manejo y abordaje de conflictos.</li>
+                        <li>Modos, estilos y actitudes frente a las interacciones y negociaciones.</li>
+                        <li>Negociación posicional, distributiva, transaccional suma-cero.</li>
+                    </ul>
+
+                    <!-- Sesión 2 -->
+                    <h4 class="font-semibold text-slate-800 text-sm mb-1">Sesión 2 – Modelo de Negociación Ganador-Ganador (MGA - Método Harvard)</h4>
+                    <ul class="text-sm text-slate-600 mb-4 space-y-1">
+                        <li>Modelo del Proyecto de Negociación de Harvard.</li>
+                        <li>Preparación, análisis y evaluación de sus negociaciones.</li>
+                        <li>Proceso de negociación con beneficios mutuos.</li>
+                        <li>Simulación de negociación.</li>
+                    </ul>
+
+                    <!-- Sesión 3 -->
+                    <h4 class="font-semibold text-slate-800 text-sm mb-1">Sesión 3 – Estrategias de Negociación y Construcción de Acuerdos</h4>
+                    <ul class="text-sm text-slate-600 mb-6 space-y-1">
+                        <li>Estrategias de negociación.</li>
+                        <li>Escucha activa y reenmarcar.</li>
+                        <li>Gestión de relaciones y estrategia incondicionalmente constructiva.</li>
+                        <li>Estrategias para gestionar tácticas y negociadores difíciles.</li>
+                        <li>Gestión de emociones y relaciones en la negociación.</li>
+                        <li>Integración de casos.</li>
+                    </ul>
+
+                    <div class="text-sm text-slate-700 mb-6 space-y-1">
+                        <p><strong>Fechas:</strong> 19, 21 y 26 de enero.</p>
+                        <p><strong>Duración total:</strong> 9 horas (3 sesiones de 3 horas).</p>
+                        <p><strong>Modalidad:</strong> Online en vivo.</p>
+                        <p><strong>Inversión:</strong> <span class="text-amber-700 font-semibold">59 USD</span> por el programa completo.</p>
+                        <p><strong>Cupos limitados:</strong> grupo reducido para trabajar casos reales.</p>
+                    </div>
+
+                    <a
+                        href="https://wa.me/51999039947?text=Hola,+vengo+desde+la+web.+Quiero+informaci%C3%B3n+del+Programa+Intensivo+de+Negociaci%C3%B3n."
+                        class="block w-full text-center bg-amber-600 text-white px-6 py-3 text-xs md:text-sm font-bold uppercase tracking-[0.2em] hover:bg-amber-700 transition shadow-lg rounded-sm mb-3"
+                        target="_blank"
+                    >
+                        Quiero más información por WhatsApp
+                    </a>
+
+                    <a
+                        href="https://wa.me/51999039947?text=Hola,+deseo+reservar+una+plaza+para+el+Programa+Intensivo+de+Negociaci%C3%B3n."
+                        class="block w-full text-center border border-amber-600 text-amber-700 px-6 py-3 text-xs md:text-sm font-bold uppercase tracking-[0.2em] hover:bg-amber-50 transition rounded-sm"
+                        target="_blank"
+                    >
+                        Reservar mi plaza
+                    </a>
+
+                    <p class="text-[12px] text-slate-500 mt-4">
+                        ¿No puedes conectarte en esos horarios? También dispongo de la versión asincrónica del programa (grabado) por
+                        <strong> 39 USD</strong>. Escríbeme por WhatsApp y te cuento las opciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="bg-slate-900 text-white py-20 px-6 text-center border-t-4 border-amber-600">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif">Recupere el Control Estratégico</h2>
+        <p class="text-slate-400 mb-10 text-lg">
+            El conflicto no gestionado es el impuesto más alto que paga una empresa. <br>
+            Hable hoy con un consultor senior de Orasi.
+        </p>
+        
+        <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+            <!-- Botón EMAIL (sin texto prellenado) -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=orasi.consulting.group2@gmail.com"
+   target="_blank" rel="noopener noreferrer"
+   class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-8 rounded shadow-lg transition transform hover:scale-105 uppercase tracking-widest text-sm w-full md:w-auto">
+    Agendar llamada (Email)
+            </a>
+
+            <!-- Botón WHATSAPP (con texto sugerido) -->
+            <a href="https://wa.me/51986375900?text=Hola%2C%20quiero%20agendar%20una%20llamada%20desde%20la%20web%20de%20ORASI."
+               target="_blank" rel="noopener noreferrer"
+               class="border border-amber-600 text-amber-400 hover:text-amber-500 font-bold py-4 px-8 rounded shadow-lg transition hover:bg-amber-50/10 uppercase tracking-widest text-sm w-full md:w-auto">
+                Agendar llamada por WhatsApp
+            </a>
+
+            <!-- Botón DIAGNÓSTICO -->
+            <a href="https://share.hsforms.com/2t4J7bR_aQyOABYL1jrmgzQu6jre"
+               target="_blank"
+               class="bg-amber-600 text-white px-6 py-3 text-[11px] md:text-xs font-bold uppercase tracking-wider hover:bg-amber-700 transition text-center flex items-center justify-center rounded-sm leading-tight max-w-xs">
+                Diagnóstico de Capacidad Organizacional<br>de Negociación e Involucramiento
+            </a>
+        </div>
+        
+        <div class="mt-16 text-xs text-slate-600 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <span>&copy; 2025 Orasi Consulting Group. Todos los derechos reservados.</span>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-amber-500">LinkedIn</a>
+                <a href="#" class="hover:text-amber-500">Contacto</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- SCRIPT: comportamiento de detalle de servicios -->
+    <script>
+        function ocultarTodosLosDetalles() {
+            const bloques = document.querySelectorAll('.detalle-servicio');
+            bloques.forEach(function (b) {
+                b.classList.add('hidden');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const triggers = document.querySelectorAll('[data-detalle]');
+
+            // Oculta todo al cargar
+            ocultarTodosLosDetalles();
+
+            triggers.forEach(function (el) {
+                el.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = el.getAttribute('data-detalle');
+
+                    const bloques = document.querySelectorAll('.detalle-servicio');
+                    bloques.forEach(function (b) {
+                        if (b.id === targetId) {
+                            b.classList.remove('hidden');
+                        } else {
+                            b.classList.add('hidden');
+                        }
+                    });
+
+                    const detalleSection = document.getElementById('detalle-servicios');
+                    if (detalleSection) {
+                        detalleSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+
+        // Si vuelves a la página (back del navegador), se vuelven a ocultar
+        window.addEventListener('pageshow', function () {
+            ocultarTodosLosDetalles();
+        });
+    </script>
+<section id="orasi-lab" class="py-24 bg-slate-900 text-white px-6">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2">
+            <h2 class="text-4xl font-bold mb-6">ORASI Lab</h2>
+            <p class="text-slate-400 text-lg mb-8">Ideamos aplicaciones de ingeniería digital a la medida para optimizar decisiones.</p>
+        </div>
+        <div class="lg:w-1/2">
+            <img src="https://images.unsplash.com/photo-1551288049-bbdac8626ad1?auto=format&fit=crop&w=800&q=80" class="rounded shadow-2xl">
+        </div>
+    </div>
+</section>
+</body>
 </html>
+
+
